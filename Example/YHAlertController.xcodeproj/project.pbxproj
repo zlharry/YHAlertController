@@ -39,9 +39,9 @@
 /* Begin PBXFileReference section */
 		15045B541948B44FA4371906 /* Pods-YHAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-YHAlertController_Example/Pods-YHAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		225162F7B13D1D30348322D9 /* Pods_YHAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C0492BC53E9AE9BC637B5C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		45B75AD6733F6779A7A5294B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		4D4BDFCDB4B017F2CF55C00C /* YHAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YHAlertController.podspec; path = ../YHAlertController.podspec; sourceTree = "<group>"; };
+		2C0492BC53E9AE9BC637B5C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		45B75AD6733F6779A7A5294B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4D4BDFCDB4B017F2CF55C00C /* YHAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YHAlertController.podspec; path = ../YHAlertController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		52DB5DAE2D293BA214F52259 /* Pods-YHAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHAlertController_Example.release.xcconfig"; path = "Target Support Files/Pods-YHAlertController_Example/Pods-YHAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		52FBD80747A7A2380CFFBA48 /* Pods_YHAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* YHAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				CF8330D48D4D8446C03A1BFC /* Pods-YHAlertController_Tests.debug.xcconfig */,
 				E9BED58F0845EE0986DED8CD /* Pods-YHAlertController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				844FEB94FF83BD2E409C8723 /* [CP] Embed Pods Frameworks */,
+				DA55D35DE080C807049134E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -296,28 +296,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		844FEB94FF83BD2E409C8723 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YHAlertController_Example/Pods-YHAlertController_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YHAlertController/YHAlertController.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YHAlertController.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YHAlertController_Example/Pods-YHAlertController_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B055F9C251B7CDFD034B1E4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +362,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YHAlertController_Tests/Pods-YHAlertController_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA55D35DE080C807049134E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YHAlertController_Example/Pods-YHAlertController_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YHAlertController/YHAlertController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YHAlertController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YHAlertController_Example/Pods-YHAlertController_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
