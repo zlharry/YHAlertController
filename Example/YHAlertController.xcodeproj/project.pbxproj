@@ -248,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Harry;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8SDUA27Y7M;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -523,6 +526,7 @@
 			baseConfigurationReference = 15045B541948B44FA4371906 /* Pods-YHAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8SDUA27Y7M;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YHAlertController/YHAlertController-Prefix.pch";
 				INFOPLIST_FILE = "YHAlertController/YHAlertController-Info.plist";
@@ -539,6 +543,7 @@
 			baseConfigurationReference = 52DB5DAE2D293BA214F52259 /* Pods-YHAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8SDUA27Y7M;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YHAlertController/YHAlertController-Prefix.pch";
 				INFOPLIST_FILE = "YHAlertController/YHAlertController-Info.plist";
