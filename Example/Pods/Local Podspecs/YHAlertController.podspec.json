@@ -1,0 +1,22 @@
+{
+  "name": "YHAlertController",
+  "version": "0.1.0",
+  "summary": "A short description of YHAlertController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Harry/YHAlertController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Harry": "yuanhua_zhong@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/Harry/YHAlertController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YHAlertController/Classes/**/*"
+}

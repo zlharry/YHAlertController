@@ -7,6 +7,7 @@
 //
 
 #import "YHViewController.h"
+#import "YHAlertController.h"
 
 @interface YHViewController ()
 
@@ -26,4 +27,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [YHAlertController showFromController:self title:@"提示" message:@"就是提示一下你而已啊！！！！" preferredStyle:UIAlertControllerStyleAlert andConfigBlcok:^(UIAlertController * _Nonnull alertVC) {
+        ;
+    }];
+}
 @end

@@ -1,0 +1,27 @@
+PODS:
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
+  - YHAlertController (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - YHAlertController (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expecta
+    - Specta
+
+EXTERNAL SOURCES:
+  YHAlertController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  YHAlertController: 492f9197b754616247f92d2c82819030abd98cde
+
+PODFILE CHECKSUM: 5c88d0153a502e48bd6756798feb6ddd81fccee5
+
+COCOAPODS: 1.6.2

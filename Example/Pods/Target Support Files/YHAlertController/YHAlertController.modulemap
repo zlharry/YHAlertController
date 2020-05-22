@@ -1,0 +1,6 @@
+framework module YHAlertController {
+  umbrella header "YHAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}
