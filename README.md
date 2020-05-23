@@ -1,10 +1,5 @@
 # YHAlertController
 
-[![CI Status](https://img.shields.io/travis/Harry/YHAlertController.svg?style=flat)](https://travis-ci.org/Harry/YHAlertController)
-[![Version](https://img.shields.io/cocoapods/v/YHAlertController.svg?style=flat)](https://cocoapods.org/pods/YHAlertController)
-[![License](https://img.shields.io/cocoapods/l/YHAlertController.svg?style=flat)](https://cocoapods.org/pods/YHAlertController)
-[![Platform](https://img.shields.io/cocoapods/p/YHAlertController.svg?style=flat)](https://cocoapods.org/pods/YHAlertController)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -19,6 +14,27 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'YHAlertController'
 ```
+
+## 使用方法
+```ruby
+#import "YHAlertController.h"
+
+
+[YHAlertController showFromController:self // 从某个控制器弹出
+title:@"标题" // 标题
+message:@"提示的内容" // 提示的内容
+preferredStyle:UIAlertControllerStyleAlert // 显示的样式
+andConfigBlcok:^(UIAlertController * _Nonnull alertVC) { // 在此 Block 中配置需要显示的按钮及点击按钮后的操作
+
+[alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题"
+style:UIAlertActionStyleCancel
+handler:^(UIAlertAction * _Nonnull action) {
+//  点击了该按钮后的操作
+}]];
+}];
+```
+
+
 
 ## Author
 

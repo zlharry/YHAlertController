@@ -32,9 +32,16 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [YHAlertController showFromController:self title:@"提示" message:@"就是提示一下你而已啊！！！！" preferredStyle:UIAlertControllerStyleAlert andConfigBlcok:^(UIAlertController * _Nonnull alertVC) {
-        [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            NSLog(@"点击了确定按钮======");
+    [YHAlertController showFromController:self // 从某个控制器弹出
+                                    title:@"标题" // 标题
+                                  message:@"提示的内容" // 提示的内容
+                           preferredStyle:UIAlertControllerStyleAlert // 显示的样式
+                           andConfigBlcok:^(UIAlertController * _Nonnull alertVC) { // 在此 Block 中配置需要显示的按钮及点击按钮后的操作
+                            
+        [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题"
+                                                    style:UIAlertActionStyleCancel
+                                                  handler:^(UIAlertAction * _Nonnull action) {
+            //  点击了该按钮后的操作
         }]];
     }];
 }
