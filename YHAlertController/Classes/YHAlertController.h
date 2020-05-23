@@ -16,10 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showFromController:(nullable UIViewController *)controller;
 
 /// 弹出显示
-+ (instancetype)showWithTitle:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok;
++ (instancetype)showWithTitle:(nullable NSString *)title
+                      message:(nullable NSString *)message
+               preferredStyle:(UIAlertControllerStyle)preferredStyle
+               andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok;
 
 
-+ (instancetype)showFromController:(nullable UIViewController *)controller title:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok;
+/// 弹出显示
++ (instancetype)showFromController:(nullable UIViewController *)controller
+                             title:(nullable NSString *)title
+                           message:(nullable NSString *)message
+                    preferredStyle:(UIAlertControllerStyle)preferredStyle
+                    andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok;
 
 @end
 

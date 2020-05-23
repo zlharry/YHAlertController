@@ -29,7 +29,7 @@ pod 'YHAlertController'
     [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题"
                                                 style:UIAlertActionStyleCancel
                                               handler:^(UIAlertAction * _Nonnull action) {
-        //  点击了该按钮后的操作
+                                              //  点击了该按钮后的操作
     }]];
 }];
 ```

@@ -13,23 +13,38 @@
 /// 弹出显示
 - (void)showFromController:(nullable UIViewController *)controller {
     if (controller) {
-        [controller presentViewController:self animated:YES completion:nil];
+        [controller presentViewController:self
+                                 animated:YES
+                               completion:nil];
     } else {
         UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
-        [window.rootViewController presentViewController:self animated:YES completion:nil];
+        [window.rootViewController presentViewController:self
+                                                animated:YES
+                                              completion:nil];
     }
     
 
 }
 
 /// 弹出显示
-+ (instancetype)showWithTitle:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok {
++ (instancetype)showWithTitle:(nullable NSString *)title
+                      message:(nullable NSString *)message
+               preferredStyle:(UIAlertControllerStyle)preferredStyle
+               andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok {
     
-    return [self showFromController:nil title:title message:message preferredStyle:preferredStyle andConfigBlcok:configBlcok];
+    return [self showFromController:nil
+                              title:title
+                            message:message
+                     preferredStyle:preferredStyle
+                     andConfigBlcok:configBlcok];
 }
 
 
-+ (instancetype)showFromController:(nullable UIViewController *)controller title:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok {
++ (instancetype)showFromController:(nullable UIViewController *)controller
+                             title:(nullable NSString *)title
+                           message:(nullable NSString *)message
+                    preferredStyle:(UIAlertControllerStyle)preferredStyle
+                    andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok {
     // 初始化
     YHAlertController *alertVC = [self alertControllerWithTitle:title
                                                         message:message
@@ -41,8 +56,8 @@
         configBlcok(weakAlert);
     }
     
-    
-    [alertVC showFromController:controller]; // 弹出显示
+    // 弹出显示
+    [alertVC showFromController:controller];
     
     return alertVC;
 }
