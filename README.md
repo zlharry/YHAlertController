@@ -12,7 +12,7 @@ YHAlertController is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YHAlertController'
+pod 'YHAlertController', :git => 'https://github.com/zlharry/YHAlertController.git'
 ```
 
 ## 使用方法
