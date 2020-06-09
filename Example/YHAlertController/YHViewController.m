@@ -22,6 +22,36 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 80, 40)];
+    [self.view addSubview:btn];
+    btn.backgroundColor = [UIColor orangeColor];
+    [btn addTarget:self action:@selector(btnClkicked:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+
+- (void)btnClkicked:(UIButton *)btn {
+    
+//    [YHAlertController showActionSheetFromController:self
+//                                               title:@"标题"
+//                                             message:@"消息---==="
+//                                      fromActionView:btn
+//                                      andConfigBlcok:^(UIAlertController * _Nonnull alertVC) {
+//
+//        [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题"
+//                                                    style:UIAlertActionStyleCancel
+//                                                  handler:^(UIAlertAction * _Nonnull action) {
+//            //  点击了该按钮后的操作
+//        }]];
+//
+//
+//        [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题"
+//                                                    style:UIAlertActionStyleDefault
+//                                                  handler:^(UIAlertAction * _Nonnull action) {
+//            //  点击了该按钮后的操作
+//        }]];
+//    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,17 +62,42 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [YHAlertController showFromController:self // 从某个控制器弹出
+//                                    title:@"标题" // 标题
+//                                  message:@"提示的内容" // 提示的内容
+//                           preferredStyle:UIAlertControllerStyleAlert // 显示的样式
+//                           andConfigBlcok:^(UIAlertController * _Nonnull alertVC) { // 在此 Block 中配置需要显示的按钮及点击按钮后的操作
+//
+//        [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题"
+//                                                    style:UIAlertActionStyleCancel
+//                                                  handler:^(UIAlertAction * _Nonnull action) {
+//            //  点击了该按钮后的操作
+//        }]];
+//    }];
+    
+    
     [YHAlertController showFromController:self // 从某个控制器弹出
                                     title:@"标题" // 标题
                                   message:@"提示的内容" // 提示的内容
-                           preferredStyle:UIAlertControllerStyleAlert // 显示的样式
+                           preferredStyle:UIAlertControllerStyleActionSheet // 显示的样式
                            andConfigBlcok:^(UIAlertController * _Nonnull alertVC) { // 在此 Block 中配置需要显示的按钮及点击按钮后的操作
-                            
-        [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题"
+
+        [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题ppppp"
                                                     style:UIAlertActionStyleCancel
                                                   handler:^(UIAlertAction * _Nonnull action) {
             //  点击了该按钮后的操作
         }]];
+
+
+        [alertVC addAction:[UIAlertAction actionWithTitle:@"按钮标题fffff"
+                                                    style:UIAlertActionStyleDefault
+                                                  handler:^(UIAlertAction * _Nonnull action) {
+            //  点击了该按钮后的操作
+        }]];
+
+
     }];
+    
+    
 }
 @end

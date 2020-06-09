@@ -45,6 +45,11 @@
                            message:(nullable NSString *)message
                     preferredStyle:(UIAlertControllerStyle)preferredStyle
                     andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok {
+    
+    if (UIAlertControllerStyleActionSheet == preferredStyle && [self isIPad]) {
+        preferredStyle = UIAlertControllerStyleAlert; //
+    }
+    
     // 初始化
     YHAlertController *alertVC = [self alertControllerWithTitle:title
                                                         message:message
@@ -60,6 +65,18 @@
     [alertVC showFromController:controller];
     
     return alertVC;
+}
+
+
+/// 判断当前设备是否是iPad
++ (BOOL)isIPad {
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if ([deviceType rangeOfString:@"iPad"].length > 0) {
+        return YES;
+    }
+    
+    return NO;
 }
 
 @end

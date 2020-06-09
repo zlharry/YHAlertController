@@ -29,6 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
                     preferredStyle:(UIAlertControllerStyle)preferredStyle
                     andConfigBlcok:(nullable void(^)(UIAlertController *alertVC))configBlcok;
 
+
+
+/// 判断当前设备是否是iPad 
++ (BOOL)isIPad;
+
 @end
 
 NS_ASSUME_NONNULL_END

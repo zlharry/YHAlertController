@@ -1,7 +1,7 @@
 {
   "name": "YHAlertController",
-  "version": "0.1.0",
-  "summary": "A short description of YHAlertController.",
+  "version": "0.1.1",
+  "summary": "对UIAlertController进行简单封装，方便使用。",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zlharry/YHAlertController.git",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zlharry/YHAlertController.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"

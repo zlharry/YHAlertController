@@ -1,7 +1,7 @@
 PODS:
   - Expecta (1.0.6)
   - Specta (1.0.7)
-  - YHAlertController (0.1.0)
+  - YHAlertController (0.1.1)
 
 DEPENDENCIES:
   - Expecta
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  YHAlertController: 8a6d60e7fad0981f1c467fb9407b986a77fb81ec
+  YHAlertController: 01de8ca910492e58c49400a4e6e2c83111b4ec20
 
 PODFILE CHECKSUM: b034dd52dae704a41a0db8e662961f185bcbe148
 
-COCOAPODS: 1.7.0.beta.1
+COCOAPODS: 1.6.2
