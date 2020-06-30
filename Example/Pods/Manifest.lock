@@ -1,7 +1,9 @@
 PODS:
   - Expecta (1.0.6)
+  - MBProgressHUD (1.2.0)
   - Specta (1.0.7)
-  - YHAlertController (0.1.1)
+  - YHAlertController (0.1.2):
+    - MBProgressHUD (= 1.2.0)
 
 DEPENDENCIES:
   - Expecta
@@ -11,6 +13,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Expecta
+    - MBProgressHUD
     - Specta
 
 EXTERNAL SOURCES:
@@ -19,8 +22,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  YHAlertController: 01de8ca910492e58c49400a4e6e2c83111b4ec20
+  YHAlertController: 299f60ec76497fa6df9e640036b35f78af5b3a0c
 
 PODFILE CHECKSUM: b034dd52dae704a41a0db8e662961f185bcbe148
 

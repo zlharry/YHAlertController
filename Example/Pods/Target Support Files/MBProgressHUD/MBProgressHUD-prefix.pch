@@ -10,9 +10,3 @@
 #endif
 #endif
 
-#import "YHAlertController.h"
-#import "YHHUD.h"
-
-FOUNDATION_EXPORT double YHAlertControllerVersionNumber;
-FOUNDATION_EXPORT const unsigned char YHAlertControllerVersionString[];
-
