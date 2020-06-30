@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHAlertController'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = '对UIAlertController进行简单封装，方便使用。'
 
 # This description is used to generate tags and improve search results.
